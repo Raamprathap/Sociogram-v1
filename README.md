@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# 📸 Sociogram
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sociogram is a social media web application built with React and Firebase, allowing users to authenticate, chat, and share content in real-time.
 
-## Available Scripts
+🚀 **Live Demo:** [Sociogram](https://sociogram-v1.onrender.com)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📁 Project Directory Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+raamprathap-sociogram-v1/
+├── README.md
+├── package.json
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+└── src/
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── reportWebVitals.js
+    └── setupTests.js
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚙️ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔑 User Authentication (Firebase Auth)
+- 💬 Real-time Chat
+- 📷 Firebase Storage for media sharing
+- 🛠️ Modern UI with React
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Installation & Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **1️⃣ Clone the repository**
+```sh
+git clone https://github.com/Raamprathap/Sociogram-v1.git
+cd Sociogram-v1
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **2️⃣ Install dependencies**
+```sh
+npm install
+```
 
-### `npm run eject`
+### **3️⃣ Set up Firebase**
+- Create a `.env` file in the root directory.
+- Add the following Firebase configuration:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+REACT_APP_API_KEY=your_api_key
+REACT_APP_AUTH_DOMAIN=your_auth_domain
+REACT_APP_PROJECT_ID=your_project_id
+REACT_APP_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_APP_ID=your_app_id
+REACT_APP_MEASUREMENT_ID=your_measurement_id
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> **Note:** Replace `your_*` with your Firebase project details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **4️⃣ Run the project**
+```sh
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app will start on `http://localhost:3000/`
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌍 Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Sociogram is deployed on Render. To deploy it yourself:
 
-### Code Splitting
+1. **Push to GitHub**
+2. **Connect your repository to Render**
+3. **Set up environment variables** in Render
+4. **Build and Deploy** with the following command:
+   ```sh
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🛠 Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Frontend:** React, Firebase Authentication
+- **Backend:** Firebase Firestore
+- **Deployment:** Render
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📜 License
 
-### Advanced Configuration
+MIT License © 2025 [Raamp](https://github.com/Raamprathap)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+🚀 Happy Coding!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
