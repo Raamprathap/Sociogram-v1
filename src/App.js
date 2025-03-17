@@ -6,13 +6,13 @@ import { getFirestore, collection, getDocs, query, orderBy, limit, onSnapshot, a
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDWr_tC-x_mneBnBVI23w2vrMbOBwPY780",
-  authDomain: "superchat-c05fc.firebaseapp.com",
-  projectId: "superchat-c05fc",
-  storageBucket: "superchat-c05fc.appspot.com",
-  messagingSenderId: "100497759511",
-  appId: "1:100497759511:web:df0c3f6ef7c3e70f7a6b52",
-  measurementId: "G-09892PKRCD"
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId
 };
 
 const app = initializeApp(firebaseConfig);
