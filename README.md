@@ -102,6 +102,3 @@ Sociogram is deployed on Render. To deploy it yourself:
 MIT License © 2025 [Raamp](https://github.com/Raamprathap)
 
 ---
-
-🚀 Happy Coding!
-
