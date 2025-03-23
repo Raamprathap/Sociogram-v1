@@ -97,8 +97,23 @@ Sociogram is deployed on Render. To deploy it yourself:
 
 ---
 
+## 🤝 Contributing
+
+We welcome contributions! Feel free to fork the repo, create a new branch, and submit a pull request.
+
+
 ## 📜 License
 
 MIT License © 2025 [Raamp](https://github.com/Raamprathap)
 
 ---
+
+
+## 📞 Contact
+
+- 👤 **Raam Prathap**  
+  📧 Email: [raamprathap17242@gmail.com](mailto:raamprathap17242@gmail.com)  
+  🔗 GitHub: [Raam Prathap](https://github.com/Raamprathap)  
+
+---
+💡 *Built with passion by Raamp* 🚀
