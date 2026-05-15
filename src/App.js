@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef  } from 'react';
 import './App.css';
 import { initializeApp } from "firebase/app";
-import { getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
-import { getFirestore, collection, getDocs, query, orderBy, limit, onSnapshot, addDoc, serverTimestamp } from "firebase/firestore";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
+import { getFirestore, collection, query, orderBy, limit, onSnapshot, addDoc, serverTimestamp } from "firebase/firestore";
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 const firebaseConfig = {
@@ -51,18 +51,18 @@ function SignOut() {
 function ChatRoom() {
   const dummy = useRef();
   const messagesRef = collection(firestore, "Messages");
-  const q = query(messagesRef, orderBy("createdAt"), limit(25));
-
   const [messages, setMessages] = useState([]);
   const [formValue, setFormValue] = useState("");
 
   useEffect(() => {
+    const q = query(messagesRef, orderBy("createdAt"), limit(25));
+
     const unsubscribe = onSnapshot(q, (snapshot) => {
       setMessages(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [messagesRef]);
 
   const sendMessage = async (e) => {
     e.preventDefault();
